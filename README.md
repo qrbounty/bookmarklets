@@ -1,5 +1,5 @@
 # Bookmarklets
-Some JavaScript bookmarklets I use occasionally. These are generally pretty rough since I tend to piece them together on-the-fly and they just need to be minimally functional.
+Some JavaScript bookmarklets I use occasionally. These are generally pretty rough since I tend to piece them together on-the-fly and they just need to be minimally functional. I do not claim authorship of any of these, though I've definitely tweaked quite a few of them. Sources have been cited where possible but many of these have been floating around on my systems for years.
 
 ## Usage
 The snippets below should work fine if pasted into the URL parameter of the new page/bookmark dialogs for Chrome or Firefox.
