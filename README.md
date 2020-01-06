@@ -18,15 +18,24 @@ javascript:function getNodes(e,o,t,n,c){var d=[],r=!0===getNodes[o];(n=n||docume
 ```
 
 ### Show Hidden Form Fields
-This will show form elements marked as 'hidden'.
-From [Jesse Ruderman](https://www.squarefree.com/bookmarklets/forms.html)
+This will show form elements marked as 'hidden'. From [1]
 ```javascript
 javascript:(function(){var i,f,j,e,div,label,ne; for(i=0;f=document.forms[i];++i)for(j=0;e=f[j];++j)if(e.type=="hidden"){ D=document; function C(t){return D.createElement(t);} function A(a,b){a.appendChild(b);} div=C("div"); label=C("label"); A(div, label); A(label, D.createTextNode(e.name + ": ")); e.parentNode.insertBefore(div, e); e.parentNode.removeChild(e); ne=C("input");/*for ie*/ ne.type="text"; ne.value=e.value; A(label, ne); label.style.MozOpacity=".6"; --j;/*for moz*/}})()
 ```
 
 ### Enable Disabled Form Fields
-This will allow you to edit form fields that are marked as disabled.
+This will allow you to edit form fields that are marked as disabled. From [1]
 From [Jesse Ruderman](https://www.squarefree.com/bookmarklets/forms.html)
 ```javascript
 javascript:(function(){var x,k,f,j;x=document.forms;for (k=0;k<x.length;++k){f=x[k];for(j=0;j<f.length;++j){f[j].disabled=false; f[j].readOnly=false;}}})()
 ```
+
+### Deleet
+Converts some 1337 back to a more readable format. From [1]
+```javascript
+javascript:(function(){ var T=( "| 1 m /\\/\\ m |\\/| w \\/\\/ w |/\\| h |-| h |~| u |_| m |v| n |\\| n /\\/ d |) f |= h }{ i ][ j _| j _] k |< k |{ l |_ p |> p [* r |2 v \\/ x >< y `/ a @ a 4 b 8 e 3 g 6 g 9 o 0 s 5 s $ t + t 7" ).split(" "),i,x,t; function R(t){t=t.toLowerCase();for(i=0;i<T.length;i+=2)while(t.indexOf(T[i+1])!=-1)t=t.replace(T[i+1],T[i]);return t} function F(n,i){t=n.tagName;if(i=n.data)n.data=R(i);if(t!="SCRIPT"&&t!="STYLE")for(i=0;x=n.childNodes[i];++i)F(x)} F(document) })()
+```
+
+
+## References
+1. [Jesse Ruderman](https://www.squarefree.com/bookmarklets/forms.html)
