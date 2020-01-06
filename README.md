@@ -48,7 +48,7 @@ javascript:(function(){ var T=( "| 1 m /\\/\\ m |\\/| w \\/\\/ w |/\\| h |-| h |
 ```
 
 ### Increment / Decrement URL
-Increments or decrements the URL
+Adds or substracts from the last number found in your current URL. Can be interestingly useful at times since it's a bit fuzzy on matching.
 
 #### Increment
 ```javascript
