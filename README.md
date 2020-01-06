@@ -4,7 +4,7 @@ Some JavaScript bookmarklets I use occasionally. These are generally pretty roug
 ## Dump Cookies
 Pops open a page containing cookies for the current site.
 ```javascript
-javascript:document.cookie%3D%27%27%3Bfunction hjK(S4p)%7BD3p%3D/%3B /g%3Breturn S4p.replace(D3p, %27<br><br>%27)%3B%7Dif(document.cookie.length<1)%7Balert(%27No cookie from this site!%27)%7Delse%7Bwith((na%3Dopen(%27%27,%27%27,%27%27)).document)%7Bwrite(hjK(%27Cookie for %27%2Bdocument.title.link(window.location.href)%2B%27, dd. %27%2Bnew Date()%2B%27<hr>%27%2Bdocument.cookie))%3Bclose()%7D%7D
+javscript:function a(e){return c=/; /g,e.replace(c,"<br><br>")}if(document.cookie="",document.cookie.length<1)alert("No cookie from this site!");else with((na=open("","","")).document)write(a("Cookies for "+document.title.link(window.location.href)+" on "+new Date+"<hr>"+document.cookie)),close();
 ```
 
 
