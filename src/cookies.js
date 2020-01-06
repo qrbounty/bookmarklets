@@ -1,7 +1,7 @@
 document.cookie = '';
 function a(b) {
     c = /; /g;
-    return b.replace(c, '<br>');
+    return b.replace(c, '<br><br>');
 }
 if (document.cookie.length < 1) {
     alert('No cookie from this site!')
