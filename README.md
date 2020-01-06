@@ -25,7 +25,6 @@ javascript:(function(){var i,f,j,e,div,label,ne; for(i=0;f=document.forms[i];++i
 
 ### Enable Disabled Form Fields
 This will allow you to edit form fields that are marked as disabled. From [1]
-From [Jesse Ruderman](https://www.squarefree.com/bookmarklets/forms.html)
 ```javascript
 javascript:(function(){var x,k,f,j;x=document.forms;for (k=0;k<x.length;++k){f=x[k];for(j=0;j<f.length;++j){f[j].disabled=false; f[j].readOnly=false;}}})()
 ```
