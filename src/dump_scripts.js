@@ -1,4 +1,4 @@
-javascript: s = document.getElementsByTagName('SCRIPT');
+s = document.getElementsByTagName('SCRIPT');
 d = window.open().document; /*140681*/
 d.open();
 d.close();
