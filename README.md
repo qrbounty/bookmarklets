@@ -8,7 +8,7 @@ The snippets below should work fine if pasted into the URL parameter of the new 
 ## Functions
 
 ### Dump Cookies
-Pops open a page containing cookies for the current site.
+Pops open a page containing cookies for the current site. This *does not* work for HttpOnly cookies.
 ```javascript
 javscript:function a(e){return c=/; /g,e.replace(c,"<br><br>")}if(document.cookie="",document.cookie.length<1)alert("No cookie from this site!");else with((na=open("","","")).document)write(a("Cookies for "+document.title.link(window.location.href)+" on "+new Date+"<hr>"+document.cookie)),close();
 ```
